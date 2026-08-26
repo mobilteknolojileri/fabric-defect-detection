@@ -1,0 +1,37 @@
+name: fabric_inspector
+description: YOLOv8 algoritmasıyla eğitilmiş modeli kullanarak kumaş üzerindeki delikleri tespit eden bir Flutter uygulaması
+publish_to: 'none'
+version: 2.3.7+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^0.13.4
+  image_picker: ^0.8.7
+  cupertino_icons: ^1.0.8
+  flutter_image_compress: ^2.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  flutter_launcher_icons: ^0.9.2
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/fonts/ 
+
+  fonts:
+    - family: Alice  
+      fonts:
+        - asset: assets/fonts/Alice-Regular.ttf 
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/icons/app_icon.png" 
